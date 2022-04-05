@@ -10,8 +10,7 @@ pipeline {
     stage('Build') {
       steps {
         sh '''cd test-nodeapp-1-task
-ls
-sudo docker build .'''
+ls'''
         build 'docker.build'
       }
     }

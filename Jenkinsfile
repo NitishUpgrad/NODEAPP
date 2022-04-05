@@ -3,12 +3,13 @@ pipeline {
   stages {
     stage('Checkout') {
       steps {
-        checkout scm
+        checkout(scm: scm, changelog: true, poll: true)
       }
     }
+
     stage('Build') {
       steps {
-        sh 'echo \'build\''
+        sh 'sudo docker build .'
       }
     }
 

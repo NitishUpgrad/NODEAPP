@@ -12,6 +12,7 @@ pipeline {
         sh '''cd test-nodeapp-1-task
 ls
 sudo docker build .'''
+        build 'docker.build'
       }
     }
 

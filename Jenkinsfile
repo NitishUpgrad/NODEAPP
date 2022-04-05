@@ -9,7 +9,8 @@ pipeline {
 
     stage('Build') {
       steps {
-        sh '''cd test-nodeapp-1-task
+        sh '''sudo su
+cd test-nodeapp-1-task
 ls
 pwd'''
       }

@@ -1,10 +1,5 @@
 pipeline {
-  agent {
-    dockerfile {
-      filename 'Dockerfile'
-    }
-
-  }
+  agent any
   stages {
     stage('Checkout') {
       steps {
@@ -14,8 +9,13 @@ pipeline {
 
     stage('Build') {
       steps {
-        sh '''ls
-pwd'''
+        echo 'Building docker image'
+      }
+    }
+
+    stage('Posting App') {
+      steps {
+        echo 'Posting the app'
       }
     }
 

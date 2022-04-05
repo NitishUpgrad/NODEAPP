@@ -14,9 +14,7 @@ pipeline {
 
     stage('Build') {
       steps {
-        sh '''sudo su
-cd test-nodeapp-1-task
-ls
+        sh '''ls
 pwd'''
       }
     }

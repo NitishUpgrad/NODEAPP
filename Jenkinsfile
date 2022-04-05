@@ -1,9 +1,9 @@
 pipeline {
   agent any
   stages {
-    stage('Git CheckOut') {
+    stage('Build') {
       steps {
-        sh 'checkout scm'
+        sh 'echo \'build\''
       }
     }
 

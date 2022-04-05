@@ -9,8 +9,8 @@ pipeline {
 
     stage('Build') {
       steps {
-        echo 'docker'
-        sh 'ls -a'
+        sh '''cd test-nodeapp-1-task
+ls'''
       }
     }
 

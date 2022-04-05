@@ -11,7 +11,7 @@ pipeline {
       steps {
         sh '''cd test-nodeapp-1-task
 ls
-docker --version'''
+pwd'''
       }
     }
 
